@@ -62,6 +62,7 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -160,5 +161,7 @@
         <Button Grid.Row="8" Grid.ColumnSpan="3" Margin="2" Click="Button_Click_1" >Harmonic Series Example</Button>
 
         <local:CustomButton Grid.Row="9" Grid.ColumnSpan="3" Margin="2" Text="My User Control Button" ImageSource="f16.jpg"  Click="CustomButton_Click" />
+
+        <Button Grid.Row="10" Grid.ColumnSpan="3" Margin="2" Click="Button_Click_2" >Go to custom button window</Button>
     </Grid>
 </Window>

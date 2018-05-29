@@ -59,6 +59,9 @@
     <Compile Include="CustomButton.xaml.cs">
       <DependentUpon>CustomButton.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CustomButtonWindow.xaml.cs">
+      <DependentUpon>CustomButtonWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DoubleArrayToPointsConverter.cs" />
     <Compile Include="HarmonicSeries.cs" />
     <Compile Include="SlowSource.cs" />
@@ -68,6 +71,10 @@
       <DependentUpon>WaveData.xaml</DependentUpon>
     </Compile>
     <Page Include="CustomButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomButtonWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

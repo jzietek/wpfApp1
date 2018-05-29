@@ -195,5 +195,11 @@ namespace WpfApp1
         {
 
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            CustomButtonWindow window = new CustomButtonWindow();
+            window.Show();
+        }
     }
 }
