@@ -67,6 +67,12 @@
     <Compile Include="SlowSource.cs" />
     <Compile Include="SlowThing.cs" />
     <Compile Include="TargetControl.cs" />
+    <Compile Include="ValidationExample\AgeRangeRule.cs" />
+    <Compile Include="ValidationExample\RegexValidationRule.cs" />
+    <Compile Include="ValidationExample\ValidationErrorsToStringConverter.cs" />
+    <Compile Include="ValidationExample\ValidationExampleWindow.xaml.cs">
+      <DependentUpon>ValidationExampleWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WaveData.xaml.cs">
       <DependentUpon>WaveData.xaml</DependentUpon>
     </Compile>
@@ -91,6 +97,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Theme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ValidationExample\ValidationExampleWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -129,6 +139,7 @@
   <ItemGroup>
     <Resource Include="f16.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>"C:\Program Files (x86)\Microsoft SDKs\ClickOnce\SignTool\signtool" sign "$(TargetPath)"</PostBuildEvent>

@@ -93,7 +93,6 @@
                                     <Setter TargetName="border" Property="Opacity" Value="0.7" />
                                     <Setter Property="Foreground" Value="Gray" />
                                 </Trigger>
-
                             </ControlTemplate.Triggers>
                         </ControlTemplate>
                     </Setter.Value>

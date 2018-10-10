@@ -201,5 +201,11 @@ namespace WpfApp1
             CustomButtonWindow window = new CustomButtonWindow();
             window.Show();
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            ValidationExampleWindow window = new ValidationExampleWindow();
+            window.Show();
+        }
     }
 }
